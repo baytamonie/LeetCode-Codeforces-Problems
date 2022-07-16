@@ -1,30 +1,24 @@
 package easy;
 
 public class PivotIndex {
-    public static void main(String[] args){
-
-        int[] nums = new int[] {2,1,-1};
-        System.out.println(pivotIndex(nums));
+    public static void main(String[] args) {
+        int[] nums = new int[]{1,7,3,6,5,6};
+        Solution solution = new Solution();
+        System.out.println(solution.pivotIndex(nums));
     }
 
-    public  static int pivotIndex(int[] nums) {
-        int i = 0;
-        int j = nums.length-1;
-        int sumLeft = 0;
-        int sumRight = nums[j];
-         j--;
-        while(sumLeft!=sumRight){
-            if(i==j)
-                return -1;
+    static class Solution {
+        public int pivotIndex(int[] nums) {
 
-
-            if(sumLeft<sumRight){
+            int sumLeft = 0, sumRight = 0;
+            for(int num : nums) sumRight+=num;
+            for(int i =0;i<nums.length;i++){
+                sumRight-=nums[i];
+                if(sumLeft == sumRight) return i;
                 sumLeft+=nums[i];
-                    i++;}
-            else{
-                sumRight+=nums[j];
-                j--;}
+            }
+            return -1;
         }
-        return i;
     }
+
 }
