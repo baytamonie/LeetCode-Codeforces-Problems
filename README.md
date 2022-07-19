@@ -5,5 +5,6 @@
 * [Find pivot index](Solutions/src/easy/PivotIndex.java)
 * [Isomorphic Strings](Solutions/src/easy/IsomorphicStrings.java)
 ## Medium
+* [Linked List Cycle II](Solutions/src/medium/LinkedListCycle2.java)
 
 ## Hard
