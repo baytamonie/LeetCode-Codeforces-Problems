@@ -8,9 +8,7 @@ import java.util.HashMap;
 public class LinkedListCycle2 {
 
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(10);
-        ListNode node2 = new ListNode(10);
-        System.out.println(node2.equals(node1));
+        
     }
 
     static class Solution {
