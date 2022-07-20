@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class LinkedListCycle2 {
 
     public static void main(String[] args) {
-        
+
     }
 
     static class Solution {
