@@ -1,6 +1,6 @@
 package easy;
 
-import com.sun.xml.internal.ws.message.stream.StreamAttachment;
+
 import utils.ListNode;
 
 public class MergeTwoSortedLists {
